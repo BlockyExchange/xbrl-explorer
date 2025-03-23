@@ -120,7 +120,7 @@ const useSocket = () => {
   const connect = React.useCallback(() => {
     isForcedClosed = false;
     setIsConnected(false);
-    ws = new WebSocket(websocketDomain || "wss://explorer.dogenano.io/ws");
+    ws = new WebSocket(websocketDomain || "wss://ws.xbrl.blocky.com.br");
 
     ws.onopen = () => {
       setIsError(false);
